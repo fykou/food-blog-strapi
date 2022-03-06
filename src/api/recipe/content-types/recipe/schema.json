@@ -43,8 +43,17 @@
     "other": {
       "type": "richtext"
     },
-    "thumbnail": {
-      "type": "string"
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imperial": {
+      "type": "boolean",
+      "required": true
     }
   }
 }
