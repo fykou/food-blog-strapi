@@ -12,28 +12,28 @@ module.exports = ({ env }) => [
             "data:",
             "blob:",
             "dl.airtable.com",
-            "em-strapi-bucket.s3.eu-north-1.amazonaws.com",
+            "*.amazonaws.com",
           ],
           "media-src": [
             "'self'",
             "data:",
             "blob:",
             "dl.airtable.com",
-            "em-strapi-bucket.s3.eu-north-1.amazonaws.com",
+            "*.amazonaws.com",
           ],
           upgradeInsecureRequests: null,
         },
       },
     },
   },
-  {
+  /*{
     name: "strapi::cors",
     config: {
       enabled: true,
       headers: "*",
       origin: ["http://localhost:1337", "http://0.0.0.0:1337"],
     },
-  },
+  },*/
   "strapi::cors",
   "strapi::poweredBy",
   "strapi::logger",
