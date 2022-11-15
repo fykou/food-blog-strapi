@@ -1,26 +1,41 @@
 module.exports = ({ env }) => ({
-  "users-permissions": { config: { jwtSecret: env("JWT_SECRET") } },
-  upload: {
-    config: {
-      provider: "aws-s3",
-      providerOptions: {
-        accessKeyId: env("AWS_ACCESS_KEY_ID"),
-        secretAccessKey: env("AWS_ACCESS_SECRET"),
-        region: env("AWS_REGION"),
-        params: {
-          Bucket: env("AWS_BUCKET_NAME"),
-        },
-      },
-      // These parameters could solve issues with ACL public-read access — see [this issue](https://github.com/strapi/strapi/issues/5868) for details
-      actionOptions: {
-        upload: {
-          ACL: null,
-        },
-        uploadStream: {
-          ACL: null,
-        },
-        delete: {},
-      },
-    },
-  },
+	"users-permissions": {
+		config: {
+			jwtSecret: env("JWT_SECRET"),
+			jwt: {
+				expiresIn: "30d",
+			},
+		},
+	},
+	upload: {
+		config: {
+			provider: "aws-s3",
+			providerOptions: {
+				accessKeyId: env("AWS_ACCESS_KEY_ID"),
+				secretAccessKey: env("AWS_ACCESS_SECRET"),
+				region: env("AWS_REGION"),
+				params: {
+					Bucket: env("AWS_BUCKET_NAME"),
+				},
+			},
+			actionOptions: {
+				upload: {},
+				uploadStream: {},
+				delete: {},
+			},
+		},
+	},
+	graphql: {
+		config: {
+			endpoint: "/graphql",
+			shadowCRUD: true,
+			playgroundAlways: true,
+			depthLimit: 10,
+			amountLimit: 100,
+			apolloServer: {
+				tracing: false,
+				introspection: true,
+			},
+		},
+	},
 });
