@@ -53,6 +53,33 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
+    },
+    "Directions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipe-data.directions"
+    },
+    "Extra": {
+      "type": "richtext"
+    },
+    "Servings": {
+      "type": "integer"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "recipe"
+    },
+    "ingredientSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipe-data.ingredient-section"
+    },
+    "Link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "socials.social"
     }
   }
 }
