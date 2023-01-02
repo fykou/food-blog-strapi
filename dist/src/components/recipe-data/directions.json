@@ -1,0 +1,15 @@
+{
+    "collectionName": "components_recipe_data_directions",
+    "info": {
+        "displayName": "Directions",
+        "icon": "list-ol",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "direction": {
+            "type": "text",
+            "required": true
+        }
+    }
+}

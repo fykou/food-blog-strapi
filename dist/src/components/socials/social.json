@@ -1,0 +1,25 @@
+{
+    "collectionName": "components_socials_socials",
+    "info": {
+        "displayName": "Social",
+        "icon": "address-card"
+    },
+    "options": {},
+    "attributes": {
+        "url": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "enumeration",
+            "enum": [
+                "Instagram",
+                "Facebook",
+                "Pintrest",
+                "TikTok",
+                "YouTube",
+                "LinkedIn",
+                "Twitter"
+            ]
+        }
+    }
+}

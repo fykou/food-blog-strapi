@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_recipe_data_ingredients",
+  "info": {
+    "displayName": "Ingredients",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ingredient": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "decimal",
+      "required": true
+    },
+    "unit": {
+      "type": "enumeration",
+      "enum": [
+        "tsp",
+        "tbsp",
+        "ounce",
+        "cup",
+        "g",
+        "kg",
+        "ml",
+        "l"
+      ]
+    },
+    "optional": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

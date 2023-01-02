@@ -1,0 +1,32 @@
+{
+  "name": "food-blog-cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Headless CMS for Emilys Kitchen",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-graphql": "^4.5.5",
+    "@strapi/plugin-i18n": "4.5.5",
+    "@strapi/plugin-users-permissions": "4.5.5",
+    "@strapi/provider-upload-aws-s3": "^4.5.5",
+    "@strapi/strapi": "4.5.5",
+    "pg": "8.6.0"
+  },
+  "author": {
+    "name": "Alexander Hoyby"
+  },
+  "strapi": {
+    "uuid": "45e57e9b-09f3-41ff-a28d-d7e97540338e"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

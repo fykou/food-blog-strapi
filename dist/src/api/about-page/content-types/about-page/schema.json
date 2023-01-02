@@ -1,0 +1,45 @@
+{
+    "kind": "singleType",
+    "collectionName": "about_pages",
+    "info": {
+        "singularName": "about-page",
+        "pluralName": "about-pages",
+        "displayName": "AboutPage",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "profileName": {
+            "type": "string"
+        },
+        "coverImage": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "videos"
+            ]
+        },
+        "profilePicture": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "description": {
+            "type": "richtext"
+        },
+        "profileDescription": {
+            "type": "text"
+        }
+    }
+}

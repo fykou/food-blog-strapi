@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_recipe_data_ingredient_sections",
+  "info": {
+    "displayName": "IngredientSection",
+    "icon": "file-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Section": {
+      "type": "string"
+    },
+    "Ingredients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipe-data.ingredients"
+    }
+  }
+}
