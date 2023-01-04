@@ -19,9 +19,12 @@ export default ({ env }) => ({
         },
       },
       actionOptions: {
-        upload: {},
-        uploadStream: {},
-        delete: {},
+        upload: {
+          ACL: null,
+        },
+        uploadStream: {
+          ACL: null,
+        },
       },
     },
   },
