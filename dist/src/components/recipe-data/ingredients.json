@@ -13,7 +13,7 @@
         },
         "amount": {
             "type": "decimal",
-            "required": true
+            "required": false
         },
         "unit": {
             "type": "enumeration",
@@ -31,6 +31,12 @@
         "optional": {
             "type": "boolean",
             "default": false
+        },
+        "alternativeAmount": {
+            "type": "string"
+        },
+        "additionalText": {
+            "type": "string"
         }
     }
 }

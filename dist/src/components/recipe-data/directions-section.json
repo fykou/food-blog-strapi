@@ -1,8 +1,7 @@
 {
-    "collectionName": "components_recipe_data_ingredient_sections",
+    "collectionName": "components_recipe_data_directions_sections",
     "info": {
-        "displayName": "IngredientsSection",
-        "icon": "file-alt",
+        "displayName": "DirectionsSection",
         "description": ""
     },
     "options": {},
@@ -10,10 +9,10 @@
         "section": {
             "type": "string"
         },
-        "ingredients": {
+        "directions": {
             "type": "component",
             "repeatable": true,
-            "component": "recipe-data.ingredients"
+            "component": "recipe-data.directions"
         }
     }
 }

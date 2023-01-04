@@ -4,42 +4,36 @@
     "info": {
         "singularName": "about-page",
         "pluralName": "about-pages",
-        "displayName": "AboutPage",
-        "description": ""
+        "displayName": "AboutPage"
     },
     "options": {
-        "draftAndPublish": false
+        "draftAndPublish": true
     },
     "pluginOptions": {},
     "attributes": {
         "profileName": {
-            "type": "string"
+            "type": "string",
+            "required": true
         },
         "coverImage": {
-            "type": "media",
-            "multiple": false,
-            "required": false,
             "allowedTypes": [
-                "images",
-                "videos"
-            ]
+                "images"
+            ],
+            "type": "media",
+            "multiple": false
         },
         "profilePicture": {
-            "type": "media",
-            "multiple": false,
-            "required": false,
             "allowedTypes": [
-                "images",
-                "files",
-                "videos",
-                "audios"
-            ]
+                "images"
+            ],
+            "type": "media",
+            "multiple": false
         },
         "description": {
             "type": "richtext"
         },
         "profileDescription": {
-            "type": "text"
+            "type": "string"
         }
     }
 }

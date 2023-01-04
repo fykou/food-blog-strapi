@@ -8,14 +8,14 @@
         "description": ""
     },
     "options": {
-        "draftAndPublish": false
+        "draftAndPublish": true
     },
     "pluginOptions": {},
     "attributes": {
         "siteName": {
             "type": "string"
         },
-        "orginization": {
+        "organization": {
             "type": "string"
         },
         "favicon": {

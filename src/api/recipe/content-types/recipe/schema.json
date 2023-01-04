@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
@@ -20,7 +20,7 @@
     "description": {
       "type": "richtext"
     },
-    "ingredientSection": {
+    "ingredientsSection": {
       "type": "component",
       "repeatable": true,
       "component": "recipe-data.ingredient-section"
@@ -33,31 +33,34 @@
         "images"
       ]
     },
-    "directions": {
-      "type": "component",
-      "repeatable": true,
-      "component": "recipe-data.directions"
-    },
     "extra": {
       "type": "richtext"
     },
     "servings": {
       "type": "integer"
     },
-    "link": {
+    "socialLinks": {
       "type": "component",
       "repeatable": true,
       "component": "socials.social"
-    },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
     },
     "tags": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tag.tag"
+    },
+    "servingUnit": {
+      "type": "string"
+    },
+    "directionsSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipe-data.directions-section"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
     }
   }
 }

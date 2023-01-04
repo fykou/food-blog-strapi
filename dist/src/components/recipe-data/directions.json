@@ -10,6 +10,10 @@
         "direction": {
             "type": "text",
             "required": true
+        },
+        "simpleName": {
+            "type": "string",
+            "private": true
         }
     }
 }
